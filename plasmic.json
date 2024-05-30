@@ -24,7 +24,7 @@
     {
       "projectId": "q2NWcCtc7KJ2FCmeE4U5Q6",
       "projectApiToken": "Y31ijW3PfeQh0l1xwyu21lFkx56ui3wy5db4jQPExpA77BlryINdpkRYq5PSoIdpKKJIOhOyZMr36yHJDvsQ",
-      "projectName": "Website starter",
+      "projectName": "Website",
       "version": "latest",
       "cssFilePath": "plasmic/website_starter/plasmic.module.css",
       "components": [
@@ -41,9 +41,34 @@
           "scheme": "blackbox",
           "componentType": "page",
           "path": "/"
+        },
+        {
+          "id": "dxsOp7BM0-5m",
+          "name": "Button",
+          "type": "managed",
+          "projectId": "q2NWcCtc7KJ2FCmeE4U5Q6",
+          "renderModuleFilePath": "plasmic/website/PlasmicButton.tsx",
+          "importSpec": {
+            "modulePath": "Button.tsx"
+          },
+          "cssFilePath": "plasmic/website/PlasmicButton.module.css",
+          "scheme": "blackbox",
+          "componentType": "component",
+          "plumeType": "button"
         }
       ],
-      "icons": [],
+      "icons": [
+        {
+          "id": "pqJ6DcBNJV7y",
+          "name": "ChecksvgIcon",
+          "moduleFilePath": "plasmic/website/icons/PlasmicIcon__Checksvg.tsx"
+        },
+        {
+          "id": "u_PIlrUCOrFL",
+          "name": "IconIcon",
+          "moduleFilePath": "plasmic/website/icons/PlasmicIcon__Icon.tsx"
+        }
+      ],
       "images": [],
       "indirect": false,
       "globalContextsFilePath": "",

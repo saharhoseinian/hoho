@@ -59,10 +59,15 @@ import {
   useGlobalActions
 } from "@plasmicapp/react-web/lib/host";
 
+import Button from "../../Button"; // plasmic-import: dxsOp7BM0-5m/component
+
 import "@plasmicapp/react-web/lib/plasmic.css";
 
 import projectcss from "./plasmic.module.css"; // plasmic-import: q2NWcCtc7KJ2FCmeE4U5Q6/projectcss
 import sty from "./PlasmicHomepage.module.css"; // plasmic-import: axEDYus-CQjA/css
+
+import ChecksvgIcon from "../website/icons/PlasmicIcon__Checksvg"; // plasmic-import: pqJ6DcBNJV7y/icon
+import IconIcon from "../website/icons/PlasmicIcon__Icon"; // plasmic-import: u_PIlrUCOrFL/icon
 
 createPlasmicElementProxy;
 
@@ -80,6 +85,8 @@ export type PlasmicHomepage__OverridesType = {
   section?: Flex__<"section">;
   h1?: Flex__<"h1">;
   text?: Flex__<"div">;
+  freeBox?: Flex__<"div">;
+  button?: Flex__<typeof Button>;
 };
 
 export interface DefaultHomepageProps {}
@@ -166,24 +173,24 @@ function PlasmicHomepage__RenderFunc(props: {
                 sty.text
               )}
             >
-              <React.Fragment>
-                <React.Fragment>
-                  {
-                    "If you haven't already done so, go back and learn the basics by going through the Plasmic Levels tutorial.\n\nIt's always easier to start from examples! Add a new page using a template\u2014do this from the list of pages in the top toolbar.\n\nOr press the big blue + button to start inserting items into this page.\n\nIntegrate this project into your codebase\u2014press the "
-                  }
-                </React.Fragment>
-                <span
-                  className={"plasmic_default__all plasmic_default__span"}
-                  style={{ fontWeight: 700 }}
-                >
-                  {"Code"}
-                </span>
-                <React.Fragment>
-                  {
-                    " button in the top right and follow the quickstart instructions.\n\nJoin our Slack community (icon in bottom left) for help any time."
-                  }
-                </React.Fragment>
-              </React.Fragment>
+              {
+                "\u0628\u0627 \u0627\u0633\u062a\u0641\u0627\u062f\u0647 \u0627\u0632 \u0633\u06cc\u0633\u062a\u0645 \u0627\u0639\u0644\u0627\u0646\u200c\u0647\u0627\u06cc \u0641\u0634\u0627\u0631\u06cc \u067e\u06cc\u0634\u0631\u0641\u062a\u0647 \u0645\u0627\u060c \u0628\u0647 \u0631\u0627\u062d\u062a\u06cc \u0628\u0627 \u0645\u062e\u0627\u0637\u0628\u0627\u0646 \u062e\u0648\u062f \u062f\u0631 \u0627\u0631\u062a\u0628\u0627\u0637 \u0628\u0627\u0634\u06cc\u062f. \u0628\u0647\u200c\u0631\u0648\u0632\u0631\u0633\u0627\u0646\u06cc\u200c\u0647\u0627\u060c \u062a\u0628\u0644\u06cc\u063a\u0627\u062a \u0648 \u067e\u06cc\u0627\u0645\u200c\u0647\u0627\u06cc \u0634\u062e\u0635\u06cc\u200c\u0633\u0627\u0632\u06cc\u200c\u0634\u062f\u0647 \u0631\u0627 \u0628\u0647 \u0645\u0648\u0642\u0639 \u0648 \u0645\u0633\u062a\u0642\u06cc\u0645 \u0628\u0647 \u062f\u0633\u062a\u06af\u0627\u0647\u200c\u0647\u0627\u06cc \u06a9\u0627\u0631\u0628\u0631\u0627\u0646 \u062e\u0648\u062f \u0627\u0631\u0633\u0627\u0644 \u06a9\u0646\u06cc\u062f \u0648 \u0645\u0634\u0627\u0631\u06a9\u062a \u0648 \u0646\u06af\u0647\u062f\u0627\u0634\u062a \u0622\u0646\u200c\u0647\u0627 \u0631\u0627 \u0627\u0641\u0632\u0627\u06cc\u0634 \u062f\u0647\u06cc\u062f. \u067e\u0644\u062a\u0641\u0631\u0645 \u0645\u0627 \u0628\u0627 \u06af\u0632\u06cc\u0646\u0647\u200c\u0647\u0627\u06cc \u0647\u062f\u0641\u200c\u06af\u0630\u0627\u0631\u06cc \u067e\u06cc\u0634\u0631\u0641\u062a\u0647\u060c \u062a\u062d\u0644\u06cc\u0644\u200c\u0647\u0627\u06cc \u0644\u062d\u0638\u0647\u200c\u0627\u06cc \u0648 \u0627\u062f\u063a\u0627\u0645 \u06cc\u06a9\u067e\u0627\u0631\u0686\u0647 \u0628\u0627 \u0627\u067e\u0644\u06cc\u06a9\u06cc\u0634\u0646\u200c\u0647\u0627 \u0648 \u0648\u0628\u200c\u0633\u0627\u06cc\u062a\u200c\u0647\u0627\u06cc \u0645\u0648\u062c\u0648\u062f \u0634\u0645\u0627 \u0627\u0631\u0627\u0626\u0647 \u0645\u06cc\u200c\u0634\u0648\u062f. \u0627\u0645\u0631\u0648\u0632 \u0627\u0633\u062a\u0631\u0627\u062a\u0698\u06cc \u0627\u0631\u062a\u0628\u0627\u0637\u06cc \u062e\u0648\u062f \u0631\u0627 \u0645\u062a\u062d\u0648\u0644 \u06a9\u0646\u06cc\u062f \u0648 \u0627\u0637\u0645\u06cc\u0646\u0627\u0646 \u062d\u0627\u0635\u0644 \u06a9\u0646\u06cc\u062f \u06a9\u0647 \u067e\u06cc\u0627\u0645\u200c\u0647\u0627\u06cc \u0634\u0645\u0627 \u0647\u0631\u06af\u0632 \u0646\u0627\u062f\u06cc\u062f\u0647 \u06af\u0631\u0641\u062a\u0647 \u0646\u0645\u06cc\u200c\u0634\u0648\u0646\u062f. \u0647\u0645\u06cc\u0646 \u062d\u0627\u0644\u0627 \u062b\u0628\u062a\u200c\u0646\u0627\u0645 \u06a9\u0646\u06cc\u062f \u0648 \u0642\u062f\u0631\u062a \u0627\u0639\u0644\u0627\u0646\u200c\u0647\u0627\u06cc \u0641\u0648\u0631\u06cc \u0631\u0627 \u062a\u062c\u0631\u0628\u0647 \u06a9\u0646\u06cc\u062f!"
+              }
+            </div>
+            <div
+              data-plasmic-name={"freeBox"}
+              data-plasmic-override={overrides.freeBox}
+              className={classNames(projectcss.all, sty.freeBox)}
+            >
+              <Button
+                data-plasmic-name={"button"}
+                data-plasmic-override={overrides.button}
+                className={classNames("__wab_instance", sty.button)}
+                link={"https://www.google.com/"}
+                target={true}
+              >
+                {"\u06a9\u0644\u06cc\u06a9 \u06a9\u0646"}
+              </Button>
             </div>
           </section>
         </div>
@@ -193,10 +200,12 @@ function PlasmicHomepage__RenderFunc(props: {
 }
 
 const PlasmicDescendants = {
-  root: ["root", "section", "h1", "text"],
-  section: ["section", "h1", "text"],
+  root: ["root", "section", "h1", "text", "freeBox", "button"],
+  section: ["section", "h1", "text", "freeBox", "button"],
   h1: ["h1"],
-  text: ["text"]
+  text: ["text"],
+  freeBox: ["freeBox", "button"],
+  button: ["button"]
 } as const;
 type NodeNameType = keyof typeof PlasmicDescendants;
 type DescendantsType<T extends NodeNameType> =
@@ -206,6 +215,8 @@ type NodeDefaultElementType = {
   section: "section";
   h1: "h1";
   text: "div";
+  freeBox: "div";
+  button: typeof Button;
 };
 
 type ReservedPropsType = "variants" | "args" | "overrides";
@@ -271,6 +282,8 @@ export const PlasmicHomepage = Object.assign(
     section: makeNodeComponent("section"),
     h1: makeNodeComponent("h1"),
     text: makeNodeComponent("text"),
+    freeBox: makeNodeComponent("freeBox"),
+    button: makeNodeComponent("button"),
 
     // Metadata about props expected for PlasmicHomepage
     internalVariantProps: PlasmicHomepage__VariantProps,

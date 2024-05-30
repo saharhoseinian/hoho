@@ -4,7 +4,7 @@
   width: 100%;
   height: 100%;
   align-content: flex-start;
-  justify-items: center;
+  justify-items: flex-end;
   min-width: 0;
   min-height: 0;
   grid-template-columns:
@@ -62,5 +62,44 @@
   position: relative;
   width: 100%;
   height: auto;
+  color: #000000;
+  font-size: 20px;
+  font-family: "Vazirmatn", sans-serif;
+  text-align: justify;
+  line-height: 1.7;
+  background: none;
+  box-shadow: 0px 4px 16px 0px #00000042;
   min-width: 0;
+  border-radius: 10px;
+  padding: 25px;
+  border: 5px solid #ffffff;
+}
+.freeBox {
+  display: flex;
+  position: relative;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  width: 100%;
+  height: auto;
+  max-width: 100%;
+  min-width: 0;
+  padding: 8px;
+}
+.button:global(.__wab_instance) {
+  max-width: 100%;
+  position: relative;
+  margin-right: 0px;
+}
+.svg__wdVc5 {
+  position: relative;
+  object-fit: cover;
+  width: auto;
+  height: 1em;
+}
+.svg__v7Kb6 {
+  position: relative;
+  object-fit: cover;
+  width: auto;
+  height: 1em;
 }
